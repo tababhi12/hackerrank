@@ -1,0 +1,2 @@
+n,list_ = int(input()),list(map(int,input().split()))
+print((True if len(list_) == len(list(filter(lambda x : x >= 0,list_))) else False) & (True if len(list(filter(lambda x : x == x[::-1],list(map(str,list_))))) > 0 else False))

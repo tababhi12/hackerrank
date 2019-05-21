@@ -1,0 +1,5 @@
+string = input()
+print(''.join(sorted(list(filter(lambda x:x.islower(),string)))),end ='')
+print(''.join(sorted(list(filter(lambda x:x.isupper(),string)))),end ='')
+print(''.join(sorted(filter(lambda y: int(y) % 2 != 0 ,list(filter(lambda x:x.isdigit(),string))))),end ='')
+print(''.join(sorted(filter(lambda y: int(y) % 2 == 0 ,list(filter(lambda x:x.isdigit(),string))))),end ='')
